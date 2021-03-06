@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/gradient"
+    tools:context=".HistoryActivity">
+
+    <View
+        android:id="@+id/spinner_back_card"
+        android:layout_width="380dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="4dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/hist_back_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/hist_back_card"
+        android:layout_width="380dp"
+        android:layout_height="620dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnOption"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/temperature_hist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnOption" />
+
+    <TextView
+        android:id="@+id/temperature_hist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+        android:text="Temperature Sensor:"
+        android:textColor="#138CA1"
+        android:textSize="20sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOption" />
+
+    <TextView
+        android:id="@+id/current_hist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+        android:text="Current Sensor:"
+        android:textColor="#138CA1"
+        android:textSize="20sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempHist_display1" />
+
+    <TextView
+        android:id="@+id/pressure_hist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="25dp"
+        android:text="Pressure Sensor:"
+        android:textColor="#138CA1"
+        android:textSize="20sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currHist_display1" />
+
+    <TextView
+        android:id="@+id/airflow_hist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="25dp"
+        android:text="Airflow Sensor:"
+        android:textColor="#138CA1"
+        android:textSize="20sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pressHist_display2" />
+
+    <TextView
+        android:id="@+id/tempHist_display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cardo_bold"
+        android:text="Sensor 1:"
+        android:textColor="#BC12172A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temperature_hist" />
+
+    <TextView
+        android:id="@+id/currHist_display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cardo_bold"
+        android:text="Sensor 1:"
+        android:textColor="#BC12172A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_hist" />
+
+    <TextView
+        android:id="@+id/pressHist_display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cardo_bold"
+        android:text="Sensor 1:"
+        android:textColor="#BC12172A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pressure_hist" />
+
+    <TextView
+        android:id="@+id/pressHist_display2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/cardo_bold"
+        android:text="Sensor 2:"
+        android:textColor="#BC12172A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pressure_hist" />
+
+    <TextView
+        android:id="@+id/airHist_display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cardo_bold"
+        android:text="Sensor 1:"
+        android:textColor="#BC12172A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/airflow_hist" />
+
+
+    <TextView
+        android:id="@+id/tempHist_show1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:text="--------"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/temperature_hist"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_hist" />
+
+    <TextView
+        android:id="@+id/currentHist_show1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:text="--------"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/current_hist"
+        app:layout_constraintTop_toBottomOf="@+id/current_hist" />
+
+    <TextView
+        android:id="@+id/pressureHist_show1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:text="--------"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/pressure_hist"
+        app:layout_constraintTop_toBottomOf="@+id/pressure_hist" />
+
+    <TextView
+        android:id="@+id/pressureHist_show2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="44dp"
+        android:text="--------"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/pressure_hist"
+        app:layout_constraintTop_toBottomOf="@+id/pressure_hist" />
+
+    <TextView
+        android:id="@+id/airHist_show1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:text="--------"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/airflow_hist"
+        app:layout_constraintTop_toBottomOf="@+id/airflow_hist" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/gradient"
+        android:padding="12dp"
+        android:text="Update Data"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/airflow_hist" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

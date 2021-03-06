@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "126708726984",
+    "firebase_url": "https://hvacmonitor-c5663.firebaseio.com",
+    "project_id": "hvacmonitor-c5663",
+    "storage_bucket": "hvacmonitor-c5663.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126708726984:android:5911951d7bf580a63cb9fd",
+        "android_client_info": {
+          "package_name": "com.example.hvac_monitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126708726984-jgc5mv1lgs3ciu6p00687vkaliahqmvd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJRFKg4_IB6MuRK4aze6I_C45jj7vcbdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126708726984-jgc5mv1lgs3ciu6p00687vkaliahqmvd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

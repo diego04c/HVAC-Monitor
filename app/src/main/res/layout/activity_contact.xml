@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    tools:context=".ContactActivity">
+
+    <View
+        android:id="@+id/live_back_card"
+        android:layout_width="380dp"
+        android:layout_height="700dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Contacts"
+        android:textColor="#12172A"
+        android:textSize="34sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintEnd_toEndOf="@+id/live_back_card"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="@+id/live_back_card"
+        app:layout_constraintTop_toTopOf="@+id/live_back_card" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="Add/View Your Technician Information"
+        android:textAlignment="center"
+        android:textColor="#AE12172A"
+        android:textSize="16sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintEnd_toEndOf="@+id/live_back_card"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="@+id/live_back_card"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <View
+        android:id="@+id/contact_div"
+        android:layout_width="382dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="#009688"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <TextView
+        android:id="@+id/tech_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="First Name"
+        android:textColor="#12172A"
+        android:textSize="20sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintStart_toStartOf="@+id/live_back_card"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <EditText
+        android:id="@+id/tech_first_name_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter First Name"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/live_back_card"
+        app:layout_constraintStart_toStartOf="@+id/tech_first_name"
+        app:layout_constraintTop_toBottomOf="@+id/tech_first_name" />
+
+    <TextView
+        android:id="@+id/tech_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Last Name"
+        android:textColor="#12172A"
+        android:textSize="20sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintStart_toStartOf="@+id/live_back_card"
+        app:layout_constraintTop_toBottomOf="@id/tech_first_name_show" />
+
+    <EditText
+        android:id="@+id/tech_show_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter Last Name"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/live_back_card"
+        app:layout_constraintStart_toStartOf="@+id/tech_last_name"
+        app:layout_constraintTop_toBottomOf="@+id/tech_last_name" />
+
+    <TextView
+        android:id="@+id/tech_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textColor="#12172A"
+        android:textSize="20sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintStart_toStartOf="@+id/live_back_card"
+        app:layout_constraintTop_toBottomOf="@id/tech_show_last_name" />
+
+    <EditText
+        android:id="@+id/tech_address_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter Email"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/live_back_card"
+        app:layout_constraintStart_toStartOf="@+id/tech_address"
+        app:layout_constraintTop_toBottomOf="@+id/tech_address" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Phone Number"
+        android:textColor="#12172A"
+        android:textSize="20sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintStart_toStartOf="@+id/live_back_card"
+        app:layout_constraintTop_toBottomOf="@+id/tech_address_show" />
+
+    <EditText
+        android:id="@+id/num_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter Phone Number"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/live_back_card"
+        app:layout_constraintStart_toStartOf="@+id/phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/gradient"
+        android:padding="16dp"
+        android:text="Save Contact"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_show" />
+
+    <Button
+        android:id="@+id/show_contact"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/gradient"
+        android:padding="16dp"
+        android:text="Go To Saved Contacts"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/live_back_card"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

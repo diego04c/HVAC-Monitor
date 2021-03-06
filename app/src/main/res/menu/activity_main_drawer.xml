@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/shortlogo"
+            android:title="Home" />
+        <!--<item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/history_icon"
+            android:title="History Log" /> -->
+        <item
+            android:id="@+id/nav_live"
+            android:icon="@drawable/live_news"
+            android:title="Live Data" />
+        <item
+            android:id="@+id/nav_saved_contacts"
+            android:icon="@drawable/tech_icon"
+            android:title="Saved Contacts" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/add_icon"
+            android:title="Add Contact" />
+        <item
+            android:id="@+id/nav_history"
+            android:title=" " />
+
+    </group>
+</menu>

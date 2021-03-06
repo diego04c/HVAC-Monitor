@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0DD1F1EE"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/gradient"
+        app:layout_constraintBottom_toTopOf="@+id/welcome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <View
+        android:id="@+id/back_card"
+        android:layout_width="380dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="59dp"
+        android:background="#3B98D5DA"
+        app:layout_constraintBottom_toTopOf="@+id/gradient_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hvaclogo" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/cardo_bold"
+        android:text="Home Dashboard"
+        android:textColor="#E0E8ED"
+        android:textSize="18sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintBottom_toTopOf="@+id/gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_dashboard"
+        app:layout_constraintVertical_bias="0.621" />
+
+    <TextView
+        android:id="@+id/my_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/cardo_bold"
+        android:text="Welcome"
+        android:textColor="#F3F7FA"
+        android:textSize="38dp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@id/gradient"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+    <View
+        android:id="@+id/hvaclogo"
+        android:layout_width="224dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="89dp"
+        android:background="@drawable/hvaclogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradient" />
+
+    <!-- <Button
+        android:id="@+id/hist_button"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/gradient"
+        android:fontFamily="@font/cardo"
+        android:padding="14dp"
+        android:text="History Log"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintBottom_toTopOf="@+id/live_button"
+        app:layout_constraintEnd_toEndOf="@+id/back_card"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/back_card"
+        app:layout_constraintTop_toTopOf="@+id/back_card" /> -->
+
+    <!--<View
+        android:id="@+id/history_icon"
+        android:layout_width="63dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/history_icon"
+        app:layout_constraintEnd_toEndOf="@+id/back_card"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/hist_button"
+        app:layout_constraintTop_toTopOf="@+id/back_card" /> -->
+
+    <Button
+        android:id="@+id/hist_button"
+        android:layout_width="24dp"
+        android:layout_height="15dp"
+        android:fontFamily="@font/cardo"
+        android:padding="14dp"
+        android:text="History Log"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/hvaclogo"
+        app:layout_constraintEnd_toEndOf="@+id/hvaclogo"
+        app:layout_constraintStart_toStartOf="@+id/hvaclogo"
+        app:layout_constraintTop_toBottomOf="@+id/gradient"
+        app:layout_constraintVertical_bias="0.614" />
+
+    <Button
+        android:id="@+id/live_button"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        android:padding="14dp"
+        android:text="Live Data"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_contact"
+        app:layout_constraintEnd_toEndOf="@+id/back_card"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/back_card"
+        app:layout_constraintTop_toTopOf="@+id/back_card" />
+
+    <View
+        android:id="@+id/live_icon"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/live_news"
+        app:layout_constraintEnd_toEndOf="@+id/back_card"
+        app:layout_constraintStart_toEndOf="@+id/live_button"
+        app:layout_constraintTop_toTopOf="@+id/back_card" />
+
+    <Button
+        android:id="@+id/button_contact"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/gradient"
+        android:padding="14dp"
+        android:text="Contact Technician"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:fontFamily="@font/cardo_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/back_card"
+        app:layout_constraintEnd_toEndOf="@+id/back_card"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/back_card"
+        app:layout_constraintTop_toBottomOf="@+id/live_button" />
+
+    <View
+        android:id="@+id/gradient_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/tech_icon"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/tech_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/back_card"
+        app:layout_constraintEnd_toEndOf="@+id/back_card"
+        app:layout_constraintStart_toEndOf="@+id/button_contact"
+        app:layout_constraintTop_toBottomOf="@+id/live_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
